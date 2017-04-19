@@ -1,0 +1,25 @@
+﻿<Window x:Class="HDImport.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HDImport" Height="268" Width="525" ResizeMode="CanMinimize">
+    <DockPanel>
+        <Menu IsMainMenu="True" DockPanel.Dock="Top">
+            <MenuItem Header="Edit Models" Click="editModels"></MenuItem>
+            <MenuItem Header="Change Job #" Click="jobNumber"></MenuItem>
+        </Menu>
+        <Grid Margin="0,-1,0,6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="511*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="..." Click="headerClick"  HorizontalAlignment="Left" Height="45" Margin="463,23,0,0" VerticalAlignment="Top" Width="38" Grid.Column="1"/>
+            <Button Content="..." Click="itemClick" HorizontalAlignment="Left" Height="45" Margin="463,73,0,0" VerticalAlignment="Top" Width="38" Grid.Column="1"/>
+            <Button Content="..." Click="outputClick" HorizontalAlignment="Left" Height="45" Margin="463,123,0,0" VerticalAlignment="Top" Width="38" Grid.Column="1"/>
+            <Button Content="Run File" Click="runClick" HorizontalAlignment="Left" Height="30" Margin="4,173,0,0" VerticalAlignment="Top" Width="92" Grid.Column="1"/>
+            <Label Content="Header File" Name="headerLine" HorizontalAlignment="Left" Height="45" Margin="4,23,0,0" VerticalAlignment="Top" Width="454" Grid.Column="1"/>
+            <Label Content="Item File" Name="itemLine" HorizontalAlignment="Left" Height="45" Margin="4,73,0,0" VerticalAlignment="Top" Width="454" Grid.Column="1"/>
+            <Label Content="HDImport Output" Name="importLine" HorizontalAlignment="Left" Height="45" Margin="4,123,0,0" VerticalAlignment="Top" Width="454" Grid.Column="1"/>
+            <Label Name="status" Content="" HorizontalAlignment="Left" Margin="101,176,0,0" VerticalAlignment="Top" Grid.Column="1" RenderTransformOrigin="-0.6,-1.364"/>
+        </Grid>
+    </DockPanel>
+</Window>
